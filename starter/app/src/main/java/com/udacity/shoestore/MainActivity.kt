@@ -23,7 +23,8 @@ class MainActivity : AppCompatActivity() {
 
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.loginFragment
+                R.id.loginFragment,
+                R.id.welcomeFragment
             )
         )
 

@@ -26,7 +26,7 @@
             android:padding="@dimen/margin_medium">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/header_text"
                 style="@style/HeaderDefault"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/sub_header_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp_64"
@@ -48,10 +48,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+                app:layout_constraintTop_toBottomOf="@+id/header_text" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/user_name_edit_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp_72"
@@ -60,35 +60,35 @@
                 android:hint="@string/username_edit_text_hint"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                app:layout_constraintTop_toBottomOf="@+id/sub_header_text" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/user_name_label_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/name"
-                app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
-                app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName"
+                app:layout_constraintBottom_toBottomOf="@+id/user_name_edit_text"
+                app:layout_constraintEnd_toStartOf="@+id/user_name_edit_text"
                 app:layout_constraintHorizontal_bias="0.685"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName"
+                app:layout_constraintTop_toTopOf="@+id/user_name_edit_text"
                 app:layout_constraintVertical_bias="0.538" />
 
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/password_label_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/password"
-                app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword2"
-                app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword2"
+                app:layout_constraintBottom_toBottomOf="@+id/password_edit_text"
+                app:layout_constraintEnd_toStartOf="@+id/password_edit_text"
                 app:layout_constraintHorizontal_bias="0.699"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/editTextTextPassword2"
+                app:layout_constraintTop_toTopOf="@+id/password_edit_text"
                 app:layout_constraintVertical_bias="0.307" />
 
             <EditText
-                android:id="@+id/editTextTextPassword2"
+                android:id="@+id/password_edit_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp_20"
@@ -97,10 +97,10 @@
                 android:hint="@string/password_edit_text_hint"
                 android:inputType="textPassword"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+                app:layout_constraintTop_toBottomOf="@+id/user_name_edit_text" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/login_button"
                 style="@style/ActionButtonStyle.Primary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -110,10 +110,10 @@
                 android:textColor="@color/colorWhite"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+                app:layout_constraintTop_toBottomOf="@+id/password_edit_text" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/sign_up_button"
                 style="@style/ActionButtonStyle.Primary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -125,7 +125,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button" />
+                app:layout_constraintTop_toBottomOf="@+id/login_button" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
