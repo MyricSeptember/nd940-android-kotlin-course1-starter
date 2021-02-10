@@ -24,12 +24,16 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.loginFragment,
-                R.id.welcomeFragment
+                R.id.shoeListFragment
             )
         )
 
         setSupportActionBar(activityMainBinding.toolbar)
         navController = findNavController(R.id.nav_host_Fragment)
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        return NavigationUI.navigateUp(navController, appBarConfiguration)
     }
 }

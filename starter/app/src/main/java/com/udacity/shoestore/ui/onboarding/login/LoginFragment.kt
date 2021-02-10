@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentLoginBinding
+import kotlinx.android.synthetic.main.fragment_login.*
 
 class LoginFragment : Fragment() {
 
@@ -22,15 +23,18 @@ class LoginFragment : Fragment() {
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_login, container, false)
 
-        binding.loginButton.setOnClickListener {
-            allFieldCompleted()
-        }
-
-        binding.signUpButton.setOnClickListener {
-            allFieldCompleted()
-        }
+        setListeners()
 
         return binding.root
+    }
+
+    private fun setListeners() {
+        val clickableViews: List<View> =
+            listOf(binding.signUpButton, binding.loginButton)
+
+        for (item in clickableViews) {
+            item.setOnClickListener { allFieldCompleted() }
+        }
     }
 
 
@@ -41,7 +45,7 @@ class LoginFragment : Fragment() {
         if (userNameValue.isEmpty() || userPasswordValue.isEmpty()) {
             Toast.makeText(
                 requireContext(),
-                getString(R.string.complete_all_fields_text),
+                getString(R.string.complete_all_fields_login_text),
                 Toast.LENGTH_SHORT
             ).show()
         } else {

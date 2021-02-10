@@ -11,9 +11,12 @@
     <dimen name="dp_72">72dp</dimen>
     <dimen name="dp_48">48dp</dimen>
     <dimen name="dp_64">64dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
 
     <dimen name="sp_30">30sp</dimen>
     <dimen name="sp_28">28sp</dimen>
     <dimen name="sp_16">16sp</dimen>
+
+    <dimen name="shoe_view_item_separator_height">2dp</dimen>
 
 </resources>

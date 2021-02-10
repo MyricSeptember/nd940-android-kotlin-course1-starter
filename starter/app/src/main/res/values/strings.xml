@@ -11,5 +11,17 @@
     <string name="welcome_text">Welcome</string>
     <string name="welcome_description_text">Welcome to our start app.\nPress next to continue in the jouyrney.</string>
     <string name="continue_button_text">Continue</string>
-    <string name="complete_all_fields_text">Please complete all the fields.</string>
+    <string name="complete_all_fields_text">Please complete all the fields or size can\'t be 0.0</string>
+    <string name="complete_all_fields_login_text">Please complete all the fields.</string>
+    <string name="instructions_header">Instructions</string>
+    <string name="instructions_description">1) Click next\n\n2)Click on the floating action button\n at the botton right corner\n to add a new shoe.\n\n3)Once added you can click\non the she to view it\'s details.</string>
+    <string name="shoe_name_text">Shoe Name:</string>
+    <string name="company_name_text">Company name:</string>
+    <string name="no_items_in_list_text">No items in your list\n\nClick the Floating button (+) to add items</string>
+    <string name="shoe_name_hint">Shoe name</string>
+    <string name="company_name_hint">Company name</string>
+    <string name="shoe_size_hint">Shoe size</string>
+    <string name="shoe_description_hint">Shoe description</string>
+    <string name="save_button_text">Save</string>
+    <string name="cancel_button_text">Cancel</string>
 </resources>

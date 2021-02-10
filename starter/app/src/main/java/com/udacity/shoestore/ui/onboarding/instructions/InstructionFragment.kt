@@ -1,4 +1,4 @@
-package com.udacity.shoestore.ui.onboarding.welcome
+package com.udacity.shoestore.ui.onboarding.instructions
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,21 +8,21 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.R
-import com.udacity.shoestore.databinding.FragmentWelcomeBinding
+import com.udacity.shoestore.databinding.FragmentInstructionBinding
 
-class WelcomeFragment : Fragment() {
-    lateinit var binding: FragmentWelcomeBinding
+class InstructionFragment : Fragment() {
+    lateinit var binding: FragmentInstructionBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_welcome, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_instruction, container, false)
 
         binding.nextButton.setOnClickListener {
 
-            findNavController().navigate(R.id.action_welcomeFragment_to_instructionFragment)
+            findNavController().navigate(R.id.action_instructionFragment_to_shoeListFragment)
         }
         return binding.root
     }
