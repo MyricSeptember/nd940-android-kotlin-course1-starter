@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ShoeStore</string>
+    <string name="sam_shoe_store">Sam Shoe Store</string>
+    <string name="login">Login</string>
+    <string name="name">Username</string>
+    <string name="password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="sign_up_button_text">Sign up</string>
+    <string name="username_edit_text_hint">Username</string>
+    <string name="password_edit_text_hint">Password</string>
 </resources>

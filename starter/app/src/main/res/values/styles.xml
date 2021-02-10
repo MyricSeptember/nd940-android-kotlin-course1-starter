@@ -7,13 +7,45 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="HeaderDefault">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorDark</item>
+    </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="ActionButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">@dimen/fab_padding</item>
+    </style>
+
+    <style name="H5Font" parent="@style/HeaderDefault">
+        <item name="android:textSize">@dimen/header_h5_text_size</item>
+    </style>
+
+    <style name="H4Font.Light" parent="@style/H4Font">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="H4Font" parent="@style/HeaderDefault">
+        <item name="android:textSize">@dimen/header_h4_text_size</item>
+    </style>
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ActionButtonStyle.Primary" parent="@style/ActionButtonStyle">
+        <item name="android:background">@drawable/action_button_primary</item>
+    </style>
 
 </resources>
