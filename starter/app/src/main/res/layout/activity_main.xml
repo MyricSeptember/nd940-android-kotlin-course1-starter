@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
 
+    <!-- I Chose to use Constraint layout because I'm able to build more complex layouts more easily without having to nest View and ViewGroup elements.
+This makes it much easier to build my layouts and because of the above statement performance is better.-->
     <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
